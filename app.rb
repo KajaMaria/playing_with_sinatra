@@ -12,3 +12,7 @@ end
 get '/Dan' do
   'Some typing'
 end
+
+get '/cat' do
+  erb(:index)
+end
