@@ -20,7 +20,13 @@ get '/Dan' do
   'Some typing'
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = Cat.new.name
+  erb(:index)
+end
+
+get '/named-cat' do
+  @name = params[:name]
+  puts params 
   erb(:index)
 end
