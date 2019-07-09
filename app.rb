@@ -16,6 +16,9 @@ get '/secret' do
   'Too much pressure'
 end
 
+require 'pry'
+require 'capybara'
+
 get '/Dan' do
   'Some typing'
 end
@@ -34,3 +37,5 @@ end
 get '/form-cat' do
   erb(:form_cat)
 end
+
+binding.pry
